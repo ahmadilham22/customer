@@ -8,7 +8,7 @@ use App\Models\{AssetCopyRight, AssetDataCollection, AssetInsight, AssetModel, A
 use Illuminate\Support\Facades\Auth;
 use Carbon\{Carbon, CarbonPeriod};
 
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
 {
