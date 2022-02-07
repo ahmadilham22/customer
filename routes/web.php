@@ -17,6 +17,32 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
+
+Route::get('/users', function () {
+    return view('chart.user', [
+        'title' => 'Active user per day'
+    ]);
+});
+Route::get('/userstotal', function () {
+    return view('chart.usertotal', [
+        'title' => 'Home'
+    ]);
+});
+Route::get('/usersservices', function () {
+    return view('chart.userservices', [
+        'title' => 'Home'
+    ]);
+});
+Route::get('/usersdatas', function () {
+    return view('chart.usersdatas', [
+        'title' => 'Home'
+    ]);
+});
+Route::get('/usersrevenue', function () {
+    return view('chart.userrevenue', [
+        'title' => 'Home'
+    ]);
+});
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware'=>'auth'], function(){
