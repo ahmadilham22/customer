@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\AssetDomain;
 use Illuminate\Http\Request;
-use Auth;
-
+use Illuminate\Support\Facades\Auth;
 class AssetDomainController extends Controller
 {
     /**

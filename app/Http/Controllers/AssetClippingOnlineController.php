@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\{AssetClippingOnline, AssetClient};
 use Illuminate\Http\Request;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class AssetClippingOnlineController extends Controller
 {

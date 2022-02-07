@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\AssetCopyRight;
 use Illuminate\Http\Request;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class AssetCopyRightController extends Controller
 {

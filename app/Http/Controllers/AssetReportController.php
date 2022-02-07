@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\{AssetReport, AssetClient};
 use Illuminate\Http\Request;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use Storage;
 class AssetReportController extends Controller
 {
