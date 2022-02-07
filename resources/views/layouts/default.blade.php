@@ -16,6 +16,13 @@
 <!-- Template CSS -->
 <link rel="stylesheet" href="{{ asset('/stisla-2.2.0/dist/assets/css/custom.css') }}">
 <link rel="stylesheet" href="{{ asset('/stisla-2.2.0/dist/assets/css/components.css') }}">
+
+
+{{-- chart --}}
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 <style>
     .select2{
         width: 100% !important;
