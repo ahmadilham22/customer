@@ -33,16 +33,16 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                       <div class="card card-statistic-1">
                         <div class="card-icon bg-primary">
-                          <i class="fas fa-box"></i>
+                          <a href="/users"><i class="fas fa-users"></i> </a>
                         </div>
                         <div class="card-wrap">
                           <div class="card-header">
-                            <h4>Total @lang('app.product')</h4>
+                            <h4>Online Users</h4>
                           </div>
-                          <div class="card-body">
+                          {{-- <div class="card-body">
                             {{number_format($product->count,0,",",".")}}<br>
                             <span class="text-muted float-right text-small">Rp. {{number_format($product->sum,0,",",".")}}</span>
-                          </div>
+                          </div> --}}
                         </div>
                       </div>
                     </div>
@@ -51,16 +51,16 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                       <div class="card card-statistic-1">
                         <div class="card-icon bg-primary">
-                          <i class="fas fa-database"></i>
+                          <a href="/userstotal"><i class="fas fa-users"></i> </a>
                         </div>
                         <div class="card-wrap">
                           <div class="card-header">
-                            <h4>Total @lang('app.data_collection')</h4>
+                            <h4>Users</h4>
                           </div>
-                          <div class="card-body">
-                            {{number_format($dataCollection->count,0,",",".")}}<br>
-                            <span class="text-muted float-right text-small">Rp. {{number_format($dataCollection->sum,0,",",".")}}</span>
-                          </div>
+                          {{-- <div class="card-body">
+                            {{number_format($product->count,0,",",".")}}<br>
+                            <span class="text-muted float-right text-small">Rp. {{number_format($product->sum,0,",",".")}}</span>
+                          </div> --}}
                         </div>
                       </div>
                     </div>
@@ -69,155 +69,52 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                       <div class="card card-statistic-1">
                         <div class="card-icon bg-primary">
-                          <i class="fas fa-puzzle-piece"></i>
+                          <a href="/usersservices"><i class="fas fa-cogs"></i> </a>
                         </div>
                         <div class="card-wrap">
                           <div class="card-header">
-                            <h4>Total @lang('app.model')</h4>
+                            <h4>Services</h4>
                           </div>
-                          <div class="card-body">
-                            {{number_format($model->count,0,",",".")}}<br>
-                            <span class="text-muted float-right text-small">Rp. {{number_format($model->sum,0,",",".")}}</span>
-                          </div>
+                          {{-- <div class="card-body">
+                            {{number_format($product->count,0,",",".")}}<br>
+                            <span class="text-muted float-right text-small">Rp. {{number_format($product->sum,0,",",".")}}</span>
+                          </div> --}}
                         </div>
                       </div>
                     </div>
-
+                    
                     <!-- COPY RIGHT -->
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                       <div class="card card-statistic-1">
                         <div class="card-icon bg-primary">
-                          <i class="fas fa-copyright"></i>
+                          <a href="usersdatas"><i class="fas fa-database"></i> </a>
                         </div>
                         <div class="card-wrap">
                           <div class="card-header">
-                            <h4>Total @lang('app.copy_right')</h4>
+                            <h4>Users Data</h4>
                           </div>
-                          <div class="card-body">
-                            {{number_format($copyRight->count,0,",",".")}}<br>
-                            <span class="text-muted float-right text-small">Rp. {{number_format($copyRight->sum,0,",",".")}}</span>
-                          </div>
+                          {{-- <div class="card-body">
+                            {{number_format($product->count,0,",",".")}}<br>
+                            <span class="text-muted float-right text-small">Rp. {{number_format($product->sum,0,",",".")}}</span>
+                          </div> --}}
                         </div>
                       </div>
                     </div>
           
                     <!-- SOFTWARE -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                      <div class="card card-statistic-1">
+                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 ">
+                      <div class="card card-statistic-1 justify-content-center">
                         <div class="card-icon bg-primary">
-                          <i class="fas fa-fax"></i>
+                          <a href="usersrevenue"><i class="fas fa-dollar-sign"></i> </a>
                         </div>
                         <div class="card-wrap">
                           <div class="card-header">
-                            <h4>Total @lang('app.software')</h4>
+                            <h4>Revenue</h4>
                           </div>
-                          <div class="card-body">
-                            {{number_format($software->count,0,",",".")}}<br>
-                            <span class="text-muted float-right text-small">Rp. {{number_format($software->sum,0,",",".")}}</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- DOMAIN -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                      <div class="card card-statistic-1">
-                        <div class="card-icon bg-primary">
-                          <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="card-wrap">
-                          <div class="card-header">
-                            <h4>Total @lang('app.domain')</h4>
-                          </div>
-                          <div class="card-body">
-                            {{number_format($domain->count,0,",",".")}}<br>
-                            <span class="text-muted float-right text-small">Rp. {{number_format($domain->sum,0,",",".")}}</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- CLIENT -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                      <div class="card card-statistic-1">
-                        <div class="card-icon bg-primary">
-                          <i class="fas fa-users"></i>
-                        </div>
-                        <div class="card-wrap">
-                          <div class="card-header">
-                            <h4>Total @lang('app.client')</h4>
-                          </div>
-                          <div class="card-body">
-                            {{number_format($client->count,0,",",".")}}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- INSIGHT -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                      <div class="card card-statistic-1">
-                        <div class="card-icon bg-primary">
-                          <i class="fas fa-file"></i>
-                        </div>
-                        <div class="card-wrap">
-                          <div class="card-header">
-                            <h4>Total @lang('app.insights')</h4>
-                          </div>
-                          <div class="card-body">
-                            {{number_format($insights->count,0,",",".")}}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- REPORT -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                      <div class="card card-statistic-1">
-                        <div class="card-icon bg-primary">
-                          <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div class="card-wrap">
-                          <div class="card-header">
-                            <h4>Total @lang('app.report')</h4>
-                          </div>
-                          <div class="card-body">
-                            {{number_format($report->count,0,",",".")}}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- CLIPPING ONLINE -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                      <div class="card card-statistic-1">
-                        <div class="card-icon bg-primary">
-                          <i class="fas fa-paperclip"></i>
-                        </div>
-                        <div class="card-wrap">
-                          <div class="card-header">
-                            <h4>Total @lang('app.clipping_online')</h4>
-                          </div>
-                          <div class="card-body">
-                            {{number_format($clippingOnline->count,0,",",".")}}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- VALUASI -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                      <div class="card card-statistic-1">
-                        <div class="card-icon bg-primary">
-                          <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <div class="card-wrap">
-                          <div class="card-header">
-                            <h4>Total Valuasi</h4>
-                          </div>
-                          <div class="card-body">
-                            Rp. {{number_format($valuasi,0,",",".")}}
-                          </div>
+                          {{-- <div class="card-body">
+                            {{number_format($product->count,0,",",".")}}<br>
+                            <span class="text-muted float-right text-small">Rp. {{number_format($product->sum,0,",",".")}}</span>
+                          </div> --}}
                         </div>
                       </div>
                     </div>
